@@ -168,6 +168,16 @@ namespace pcl
         return convergence_criteria_;
       }
 
+     /** \brief Get the number of iterations needed to converge.
+      * Call this after calling the align() method to check how many iterations the current setup
+      * needed to converge.
+      * \return The number of iterations
+      */
+      inline int getNumberOfIterations() const
+      {
+        return nr_iterations_;
+      }
+
       /** \brief Provide a pointer to the input source 
         * (e.g., the point cloud that we want to align to the target)
         *
